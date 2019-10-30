@@ -1,0 +1,23 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int Pow(int x , int y);
+int main(){
+	
+	int base,power,Power;
+	
+	cout<<"Enter Base :"; cin>>base;
+	cout<<"Enter Power :"; cin>>power;
+	
+	Power = Pow(base,power);
+	cout<<n<<"^"<<i<<"="<<Power;
+	return 0;
+}
+
+int Pow(int x , int y){
+	
+	if(y > 1){
+		
+	 return	x * Pow(x , y - 1);		
+	}	
+}
